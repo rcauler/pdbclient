@@ -22,7 +22,7 @@ import java.sql.SQLException;
 public class DumpTest {
 	@Test
 	public void testDump() throws ClassNotFoundException, SQLException, IOException {
-		Database database =  new Database( "localhost", "osklen", "root", "infosites", DatabaseType.mysql );
+		Database database =  new Database( "localhost", "dbtest", "root", "senha", DatabaseType.mysql );
 		database.connect();
 
 		TableDumpListener tableDumpListener = new TableDumpListener() {
